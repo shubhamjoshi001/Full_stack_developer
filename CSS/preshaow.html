@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p::first-letter{
+            font-size: 100px;
+        } */
+        P::first-line{
+            background-color: chocolate;
+        }
+        h1::after{
+            content: "~";
+        }
+        h1::before{
+            content: "~";
+        }
+        P::selection{
+            background-color: darkblue;
+        }
+        a:visited{
+            color: chocolate;
+        }
+        a:active{
+            color: hotpink;
+        }
+        input:focus{
+            background-color: cornflowerblue;
+        }
+        h1:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, sit labore et odio culpa corrupti atque fugiat inventore! Et architecto nesciunt asperiores repudiandae quia suscipit rerum, fugit non? Ipsam, harum.</P>
+    <h1>css data </h1>
+    <a href="#">Home</a>
+    <input type="text">
+    <h1>css data</h1>
+    
+</body>
+</html>
+
+
