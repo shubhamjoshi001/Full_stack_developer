@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.first {
+            font-size: 30px;
+            /* color: blue; */
+            background-color: crimson;
+        }
+
+        div.second {
+            border: 2px solid;
+            width: 700px;
+            margin: 39px 12px 39px 29px;
+        }
+
+        button.ani {
+            font-size: 20px;
+            font-weight: 800;
+            text-align: center;
+            color: aqua;
+            background-color: blue;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        h1 {
+            border: 2px solid;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: fantasy;
+            text-align: center;
+            color: darkblue;
+            display: inline-block;
+            padding: 15px 15px 15px 15px;
+            margin: 18px 0px 0px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function mydata() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = document.getElementById("n3").value;
+            var d = document.getElementById("n4").value;
+            var e = document.getElementById("n5").value;
+            var f = document.getElementById("n6").value;
+            var g = document.getElementById("n7").value;
+
+            if (a == "" || b == "" || c == "" || d == "" || e == "" || f == "" || g == "") {
+                alert("All Fileds are required");
+                return false;
+            }
+            else {
+                true;
+            }
+        }
+    </script>
+    <h1>FORM VALIDATION</h1>
+    <div class="second">
+        <form onsubmit="return mydata()" action="./yahoo.html">
+            <table class="first">
+                <tr>
+                    <td><label for="USER_NAME">USER_NAME</label></td>
+                    <td><input type="text" id="n1"></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td><input type="Email" id="n2"></td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input type="Password" id="n3"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone-no">phone-no</label></td>
+                    <td><input type="tel" id="n4"></td>
+                </tr>
+                <tr>
+                    <td><label id="n5" for="Gander">Gander</label></td>
+                    <td><input type="radio" name="Gander" id="">Male</td>
+                    <td><input type="radio" name="Gander" id="">Female</td>
+                    <td><input type="radio" name="Gander" id="">Other</td>
+                </tr>
+                <tr>
+                    <td><label for="Hobbies">Hobbies</label></td>
+                    <td><input type="checkbox" id="n6">Crciket</td>
+                    <td><input type="checkbox" id="">Foot-ball</td>
+                    <td><input type="checkbox" id="">Hockey</td>
+                    <td><input type="checkbox" id="">Basket</td>
+                </tr>
+                <tr>
+                    <td><label for="Education">Education</label></td>
+                    <td>
+                        <select id="n7" style="font-weight: bold; color: blueviolet;">
+                            <option value="none" id="">Enter your City</option>
+                            <option value="BSC" id="">BSC</option>
+                            <option value="MSC" id="">MSC</option>
+                            <option value="BCA" id="">BCA</option>
+                            <option value="B.TECH" id="">B.TECH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td><button class="ani">SUBMIT</button></td>
+
+                </tr>
+
+            </table>
+    </div>
+    </form>
+    </fieldset>
+</body>
+
+</html>
